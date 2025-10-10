@@ -5,7 +5,7 @@ console.log("🚀 Starting build process...");
 Bun.build({
   entrypoints: ["./src/index.ts"],
   outdir: "./dist",
-  external: ["zod"],
+  external: [],
   target: "bun",
   minify: true,
   sourcemap: "external",
