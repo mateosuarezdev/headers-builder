@@ -1,6 +1,6 @@
 # Headers Builder
 
-A fluent, type-safe HTTP headers builder for modern JavaScript runtimes. Originally built for internal use in [BRPC](https://github.com/mateosuarezdev/brpc), a modern web framework for Bun. BRPC automatically handles headers for different procedures and file types, but this library lets you override defaults or create custom headers when needed. Now available as a standalone universal library that works with any framework.
+A fluent, type-safe HTTP headers builder for modern JavaScript runtimes. Originally built for internal use in [BRPC](https://github.com/mateosuarezdev/brpc) (not yet published), a modern web framework for Bun. BRPC automatically handles headers for different procedures and file types, but this library lets you override defaults or create custom headers when needed. Now available as a standalone universal library that works with any framework.
 
 ## Features
 
