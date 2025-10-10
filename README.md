@@ -784,11 +784,11 @@ buildHeaders()
 
 ## License
 
-Custom Use License - Free to use for any purpose, but modifications and derivatives are not permitted. See [LICENSE](LICENSE) file for details.
+MIT License - See [LICENSE](https://github.com/mateosuarezdev/headers-builder/edit/main/LICENSE.md) file for details.
 
 ## Contributing
 
-Found a bug or have a feature request? Open an issue or submit a PR!
+Found a bug or have a feature request? Open an issue!
 
 ## Support
 
