@@ -1,0 +1,62 @@
+{
+  "name": "@mateosuarezdev/headers-builder",
+  "version": "1.0.5",
+  "description": "A fluent, type-safe HTTP headers builder for modern JavaScript runtimes.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.cjs",
+    "dist/**/*.d.ts",
+    "dist/**/*.map"
+  ],
+  "sideEffects": false,
+  "scripts": {
+    "build": "yarn clean && bun run build.ts && tsc --emitDeclarationOnly && rimraf dist/build.d.ts",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf dist",
+    "prepublish": "yarn clean && yarn typecheck && yarn build",
+    "rel": "yarn npm publish --access public",
+    "rel:patch": "yarn version patch && yarn npm publish --access public",
+    "rel:minor": "yarn version minor && yarn npm publish --access public",
+    "rel:major": "yarn version major && yarn npm publish --access public"
+  },
+  "packageManager": "yarn@4.10.3",
+  "keywords": [
+    "bun",
+    "router",
+    "brpc",
+    "rpc",
+    "trpc",
+    "api",
+    "http"
+  ],
+  "author": "Mateo Suarez <msdevuy@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mateosuarezdev/headers-builder.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mateosuarezdev/headers-builder/issues"
+  },
+  "homepage": "https://github.com/mateosuarezdev/headers-builder/#readme",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0",
+    "bun": ">=1.2.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.23",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.9.3"
+  }
+}
