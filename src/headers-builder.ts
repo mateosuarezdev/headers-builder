@@ -158,7 +158,7 @@ export class HeadersBuilder {
     if (allowCredentials && origin === "*") {
       throw new Error(
         'CORS: Cannot use credentials with wildcard origin "*". ' +
-          "Specify an exact origin or set credentials to false."
+          "Specify an exact origin or set credentials to false.",
       );
     }
 
@@ -208,9 +208,8 @@ export class HeadersBuilder {
 
     if (opts.hsts) {
       const maxAge = typeof opts.hsts === "number" ? opts.hsts : 31536000;
-      this.headers[
-        "Strict-Transport-Security"
-      ] = `max-age=${maxAge}; includeSubDomains`;
+      this.headers["Strict-Transport-Security"] =
+        `max-age=${maxAge}; includeSubDomains`;
     }
 
     if (opts.noSniff) {
